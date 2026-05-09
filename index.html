@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wyszukiwarka Telegram</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>🔎 Wyszukiwarka kanałów i grup Telegram</h1>
+      <p class="subtitle">Znajdź społeczności po nazwie, opisie, tematyce lub języku.</p>
+
+      <section class="search-panel">
+        <label for="query">Szukaj:</label>
+        <input id="query" type="search" placeholder="np. programowanie, AI, biznes" />
+
+        <label for="type">Typ:</label>
+        <select id="type">
+          <option value="all">Wszystkie</option>
+          <option value="channel">Kanały</option>
+          <option value="group">Grupy</option>
+        </select>
+
+        <label for="language">Język:</label>
+        <select id="language">
+          <option value="all">Dowolny</option>
+        </select>
+      </section>
+
+      <p id="results-count"></p>
+      <section id="results" class="results"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
